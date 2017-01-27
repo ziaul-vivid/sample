@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>ecco</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/full.css" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- roboto fonts -->
+    <link rel="stylesheet" href="css/metisMenu.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+  </head>
+
+  <body class="font_roboto">
+  <!-- Fixed navbar -->
+  <header class="blue_bg navbar-fixed-top">
+      <div class="container">
+  		 <div class="row">
+  		 	<div class="col-sm-6 col-xs-8">
+  		 		<a href="#" class="header_logo"><img src="images/logo_white.png" alt="ecco logo"></a>
+  		 	</div>
+  		 	<div class="col-sm-6 col-xs-4">
+  		 		<div class="pull-right dropdown profile-icon" data-toggle = "tooltip" data-placement = "bottom" title="Welcome Admin">
+  		 			<figure class="dropdown-toggle" data-toggle="dropdown">
+  		 				<img src="images/profile.jpg" class="img-circle" alt="profile icon" >
+  		 			</figure>
+  		 			<ul class="dropdown-menu">
+					    <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+					    <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Help</a></li>
+					    <li><a href="#">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+					</ul>
+  		 		</div>
+  		 		<div class="header-date-time pull-right hidden-xs">
+  		 			<p><span>3.33 </span> <span class="ft_20">AM EST</span> <br> wednesday , 17th auguest 2016</p>
+  		 		</div> 
+  		 		<div class="clearfix"></div>
+  		 	</div>
+  		 </div>      
+      </div>
+  </header>
+    <!-- Begin page content -->
+  <section class="main-content">
+     		<section>
+     			<span class="nav-icon"><i class="fa fa-bars fa-1x"></i></span>
+     			<aside class="side-menu">
+     				<nav class="menu_list">
+     					<ul id="sidemenus">
+                <li><span><a href=""><i class="fa fa-home fa-2x"></i>Home</a></span></li>
+                <li><span><a href=""><i class=""><img src="images/user.svg" width="23" alt="tta tracker"></i>TTA Tracker</a></span></li>
+                <li><span><a href=""><i class="reporticon"><img src="images/reports.svg" width="19" alt="reports"></i>Reports</a></span></li>
+                <li><span><a href=""><i class="fa fa-briefcase fa-2x"></i>Briefcase</a></span>
+                  <span class="notification">23</span>
+                </li>
+                <li><span><a href=""><i class="fa fa-gear fa-2x"></i>strategies</a></span>
+                </li>
+                <li><span><a href=""><i class="fa fa-comment fa-2x"></i>Messages</a></span><span class="empty-notification">99</span></li>
+                <li><span class="submenu-toggle"><a href=""><i class="fa fa-link fa-2x"></i>Quick Links <i class="custom-icon submenu-icon"></i></a></span>
+                  <ul class="submenu">
+                    <li><a href=""><i class="fa fa-users" aria-hidden="true"></i> Resources</a></li>
+                    <li><a href=""><i class="fa fa-book" aria-hidden="true"></i> Training Center</a></li>
+                    <li><a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> Get Help</a></li>
+                    <li><a href=""><i class="fa fa-calendar" aria-hidden="true"></i> Calender</a></li>
+                  </ul>
+                </li>
+                <li><span class="submenu-toggle"><a href=""><i class=""><img src="images/admin_icon.svg" width="19" alt="tta tracker"></i>Admin <i class="custom-icon submenu-icon"></i></a></span>
+                  <ul class="submenu">
+                    <li><a href=""><i class="fa fa-user" aria-hidden="true"></i> User</a></li>
+                    <li><a href=""><i class="fa fa-user-secret" aria-hidden="true"></i> Agency</a></li>
+                    <li><a href=""><i class="fa fa-level-up" aria-hidden="true"></i> Levels</a></li>
+                    <!-- <li><a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Create Form</a></li> -->
+                    <li><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> User Approval</a></li>
+                    <li><a href=""><i class="fa fa-eye" aria-hidden="true"></i> Show Assignments</a></li>
+                  </ul>
+                </li>
+              </ul>
+     				</nav>
+     			</aside>
+     		</section>
+     		<section>
+          <div class="container">
+          <!-- breadcrumb -->
+             <!--div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="#">Report Dashboard</a></li>
+                      <li class="active">Work Node Dashboard</li>
+                    </ol>
+                </div>
+             </div-->
+          <!-- breadcrumb ends -->
+          <!-- page content -->
+             <div class="row workbundle">
+                <div class="col-md-12">
+                  <h1 class="page-title">work node dashboard</h1> <!-- page title -->
+                </div>
+               </div>
+                <div class="row workbundle filter-box form">
+                  <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Filter by Name</label>
+                         <select class="form-control"><option>Select Name</option><option>Marcus</option></select>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Filter by Month</label>
+                         <select class="form-control"><option>Augest 11</option><option>September 11</option></select>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                         <label>Filter by Date</label>
+                         <select class="form-control"><option>Augest 11</option><option>September 11</option></select>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button class="search_btn">Search</button>
+                     </div>
+                  </div>
+                </div>
+                <div class="res_wb">
+                <div class="row wb_head text-center mar0">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                       <label>WB. Name</label>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                       <label>WB. Description</label>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                       <label>Date</label>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                       <label class="act_title">Edit / Save</label>
+                    </div>
+                    <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                       <label>CMTS</label>
+                    </div>
+                    <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                       <label>Time</label>
+                    </div>
+                    <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                       <label>Demo</label>
+                    </div>
+                    <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                       <label>Notes</label>
+                    </div>
+                    <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                       <label>Upload</label>
+                    </div>
+                  </div>
+                  <div class="row mar0 workbundle-list">
+                     <div class="text-center">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <input type="text" class="form-control" name="">
+                           </div>
+                           <p class="text-left"><a data-toggle="collapse"  href="#collapse2"><i class="fa fa-angle-down mar_r10"></i> Details</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <textarea class="form-control"></textarea>
+                           </div>
+                        </div> 
+                        <div class="col-lg-1 col-md-2 col-sm-2 pad0 col-xs-2">
+                           <div class="form-group">
+                              <input type="text" class="form-control mar_b10" name="">
+                              <input type="text" class="form-control" name="">
+                           </div>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                           <span class="btn btn-default red_bg text_white no-border sh_ebtn" data-toggle="dropdown"><i class="fa fa-edit ft_18"></i></span> 
+                           <div class="dropdown">
+                             <span class="btn btn-default red_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ft_18"></i></span>
+                             <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-edit ft_18"></i> Edit</a></li>
+                                <li><a href="#"><i class="fa fa-save ft_18"></i> Save</a></li>
+                                <li><a href="#"><i class="fa fa-bell-o ft_18"></i> CMTS</a></li>
+                                <li><a href="#"><i class="fa fa-clock-o ft_18"></i> Time</a></li>
+                                <li><a href="#"><i class="fa fa-users ft_18"></i>Demo</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note ft_18"></i>Notes</a></li>
+                                <li><a href="#"><i class="fa fa-upload ft_18"></i>Upload</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                             <span class="btn btn-default blue_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-clock-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-users ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-sticky-note ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-upload ft_18"></i></span>
+                        </div>
+                        
+                        <!-- details box -->
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div id="collapse2" class="panel-collapse collapse wb_details">
+                                <div class="row pad_lr20">
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Target Audience</p>
+                                          <label>Admin</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Responsible Party</p>
+                                          <label>Ester Lopez</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected Start</p>
+                                          <label>14 Jun 2016</label>
+                                          <span class="time-iconbg hidden-xs hidden-sm"></span>
+                                          <span class="time-icon hidden-xs hidden-sm"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected End</p>
+                                          <label>26 Dec 2016</label>
+                                       </div>
+                                    </div>
+                                </div>
+                               <div class="col-md-12">
+                                  <div class="panel-group">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#workbundle_list" href="#collapse1" class="activities"><i class="fa fa-angle-down" aria-hidden="true"></i><span>Activities</span></a>
+                                          <a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Edit</span></a>
+                                          <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Save</span></a>
+                                          <a href=""><i class="fa fa-bell" aria-hidden="true"></i><span>Comments</span></a>
+                                        </h4>
+                                        <a href="" class="close_panel"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                      </div>
+                                      <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           <ul class="activity_list">
+                                              <li class="col-md-3"><p class="activity_box">1. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">2. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">3. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">4. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">5. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">6. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">7. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">8. Activity <i class="fa fa-upload"></i></p></li>
+                                           </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                               </div>
+                               </div>
+                            </div>
+                          </div>
+                     </div>
+                     <div class="text-center">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <input type="text" class="form-control" name="">
+                           </div>
+                           <p class="text-left"><a data-toggle="collapse"  href="#collapse2"><i class="fa fa-angle-down mar_r10"></i> Details</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <textarea class="form-control"></textarea>
+                           </div>
+                        </div> 
+                        <div class="col-lg-1 col-md-2 col-sm-2 pad0 col-xs-2">
+                           <div class="form-group">
+                              <input type="text" class="form-control mar_b10" name="">
+                              <input type="text" class="form-control" name="">
+                           </div>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                           <div class="dropdown">
+                             <span class="btn btn-default red_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit ft_18"></i></span>
+                             <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-bell-o ft_18"></i> CMTS</a></li>
+                                <li><a href="#"><i class="fa fa-clock-o ft_18"></i> Time</a></li>
+                                <li><a href="#"><i class="fa fa-users ft_18"></i>Demo</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note ft_18"></i>Notes</a></li>
+                                <li><a href="#"><i class="fa fa-upload ft_18"></i>Upload</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                             <span class="btn btn-default blue_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-clock-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-users ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-sticky-note ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-upload ft_18"></i></span>
+                        </div>
+                        
+                        <!-- details box -->
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div id="collapse2" class="panel-collapse collapse wb_details">
+                                <div class="row pad_lr20">
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Target Audience</p>
+                                          <label>Admin</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Responsible Party</p>
+                                          <label>Ester Lopez</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected Start</p>
+                                          <label>14 Jun 2016</label>
+                                          <span class="time-iconbg hidden-xs hidden-sm"></span>
+                                          <span class="time-icon hidden-xs hidden-sm"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected End</p>
+                                          <label>26 Dec 2016</label>
+                                       </div>
+                                    </div>
+                                </div>
+                               <div class="col-md-12">
+                                  <div class="panel-group">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#workbundle_list" href="#collapse1" class="activities"><i class="fa fa-angle-down" aria-hidden="true"></i><span>Activities</span></a>
+                                          <a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Edit</span></a>
+                                          <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Save</span></a>
+                                          <a href=""><i class="fa fa-bell" aria-hidden="true"></i><span>Comments</span></a>
+                                        </h4>
+                                        <a href="" class="close_panel"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                      </div>
+                                      <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           <ul class="activity_list">
+                                              <li class="col-md-3"><p class="activity_box">1. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">2. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">3. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">4. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">5. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">6. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">7. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">8. Activity <i class="fa fa-upload"></i></p></li>
+                                           </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                               </div>
+                               </div>
+                            </div>
+                          </div>
+                     </div>
+                     <div class="text-center">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <input type="text" class="form-control" name="">
+                           </div>
+                           <p class="text-left"><a data-toggle="collapse"  href="#collapse2"><i class="fa fa-angle-down mar_r10"></i> Details</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <textarea class="form-control"></textarea>
+                           </div>
+                        </div> 
+                        <div class="col-lg-1 col-md-2 col-sm-2 pad0 col-xs-2">
+                           <div class="form-group">
+                              <input type="text" class="form-control mar_b10" name="">
+                              <input type="text" class="form-control" name="">
+                           </div>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                           <div class="dropdown">
+                             <span class="btn btn-default red_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit ft_18"></i></span>
+                             <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-bell-o ft_18"></i> CMTS</a></li>
+                                <li><a href="#"><i class="fa fa-clock-o ft_18"></i> Time</a></li>
+                                <li><a href="#"><i class="fa fa-users ft_18"></i>Demo</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note ft_18"></i>Notes</a></li>
+                                <li><a href="#"><i class="fa fa-upload ft_18"></i>Upload</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                             <span class="btn btn-default blue_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-clock-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-users ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-sticky-note ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-upload ft_18"></i></span>
+                        </div>
+                        
+                        <!-- details box -->
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div id="collapse2" class="panel-collapse collapse wb_details">
+                                <div class="row pad_lr20">
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Target Audience</p>
+                                          <label>Admin</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Responsible Party</p>
+                                          <label>Ester Lopez</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected Start</p>
+                                          <label>14 Jun 2016</label>
+                                          <span class="time-iconbg hidden-xs hidden-sm"></span>
+                                          <span class="time-icon hidden-xs hidden-sm"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected End</p>
+                                          <label>26 Dec 2016</label>
+                                       </div>
+                                    </div>
+                                </div>
+                               <div class="col-md-12">
+                                  <div class="panel-group">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#workbundle_list" href="#collapse1" class="activities"><i class="fa fa-angle-down" aria-hidden="true"></i><span>Activities</span></a>
+                                          <a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Edit</span></a>
+                                          <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Save</span></a>
+                                          <a href=""><i class="fa fa-bell" aria-hidden="true"></i><span>Comments</span></a>
+                                        </h4>
+                                        <a href="" class="close_panel"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                      </div>
+                                      <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           <ul class="activity_list">
+                                              <li class="col-md-3"><p class="activity_box">1. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">2. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">3. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">4. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">5. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">6. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">7. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">8. Activity <i class="fa fa-upload"></i></p></li>
+                                           </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                               </div>
+                               </div>
+                            </div>
+                          </div>
+                     </div>
+                     <div class="text-center">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <input type="text" class="form-control" name="">
+                           </div>
+                           <p class="text-left"><a data-toggle="collapse"  href="#collapse2"><i class="fa fa-angle-down mar_r10"></i> Details</a></p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                           <div class="form-group">
+                               <textarea class="form-control"></textarea>
+                           </div>
+                        </div> 
+                        <div class="col-lg-1 col-md-2 col-sm-2 pad0 col-xs-2">
+                           <div class="form-group">
+                              <input type="text" class="form-control mar_b10" name="">
+                              <input type="text" class="form-control" name="">
+                           </div>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                           <div class="dropdown">
+                             <span class="btn btn-default red_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit ft_18"></i></span>
+                             <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-bell-o ft_18"></i> CMTS</a></li>
+                                <li><a href="#"><i class="fa fa-clock-o ft_18"></i> Time</a></li>
+                                <li><a href="#"><i class="fa fa-users ft_18"></i>Demo</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note ft_18"></i>Notes</a></li>
+                                <li><a href="#"><i class="fa fa-upload ft_18"></i>Upload</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                             <span class="btn btn-default blue_bg text_white no-border dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-clock-o ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-users ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                          <span class="btn btn-default blue_bg text_white no-border"> <i class="fa fa-sticky-note ft_18"></i></span>
+                        </div>
+                        <div class="col-lg-1 hidden-md hidden-sm hidden-xs">
+                           <span class="btn btn-default blue_bg text_white no-border"><i class="fa fa-upload ft_18"></i></span>
+                        </div>
+                        
+                        <!-- details box -->
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div id="collapse2" class="panel-collapse collapse wb_details">
+                                <div class="row pad_lr20">
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Target Audience</p>
+                                          <label>Admin</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Responsible Party</p>
+                                          <label>Ester Lopez</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected Start</p>
+                                          <label>14 Jun 2016</label>
+                                          <span class="time-iconbg hidden-xs hidden-sm"></span>
+                                          <span class="time-icon hidden-xs hidden-sm"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                       <div class="workbundle_detailsbox">
+                                          <p>Projected End</p>
+                                          <label>26 Dec 2016</label>
+                                       </div>
+                                    </div>
+                                </div>
+                               <div class="col-md-12">
+                                  <div class="panel-group">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#workbundle_list" href="#collapse1" class="activities"><i class="fa fa-angle-down" aria-hidden="true"></i><span>Activities</span></a>
+                                          <a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Edit</span></a>
+                                          <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Save</span></a>
+                                          <a href=""><i class="fa fa-bell" aria-hidden="true"></i><span>Comments</span></a>
+                                        </h4>
+                                        <a href="" class="close_panel"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                                      </div>
+                                      <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                           <ul class="activity_list">
+                                              <li class="col-md-3"><p class="activity_box">1. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">2. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">3. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">4. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">5. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">6. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">7. Activity <i class="fa fa-upload"></i></p></li>
+                                              <li class="col-md-3"><p class="activity_box">8. Activity <i class="fa fa-upload"></i></p></li>
+                                           </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                               </div>
+                               </div>
+                            </div>
+                          </div>
+                     </div>
+                  </div>
+                  </div>
+                </div>
+            <!-- page content ends -->
+          </div>
+        </section>
+  </section>
+
+  <footer class="footer">
+	    <div class="container">
+	       <div class="row">
+	       		<div class="col-xs-12 col-sm-8 col-md-9">
+	       			<p><a href="">Terms of use</a><a href="">  |  Privacy Policy </a> <span>Copyright &copy; 2016 Prospectus Group, LLC. All rights reserved.</span></p>
+	       		</div>
+	       		<div class="col-xs-12 col-sm-4 col-md-3 footer-logo">
+	       			<img src="images/pgroup_new.jpg" width="30">
+	       		</div>
+	       </div>
+	    </div>
+	  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!-- menu expand script -->
+
+    <script type="text/javascript">
+    	$(".nav-icon").click(function(){
+    		$(".side-menu").toggleClass("expand-menu");
+    		$(".nav-icon").find("i").toggleClass("fa-bars fa-times ");
+    		$(".submenu").is(':visible',hidetoggle());
+    		function hidetoggle(){
+    			$(".submenu").slideUp(200);
+    		}
+    	});
+    </script>
+    <!-- tool top -->
+    <script type="text/javascript">
+    	$(function () { 
+    		$("[data-toggle = 'tooltip']").tooltip();
+    		$(".profile-icon").tooltip('show');
+    		setTimeout(function(){
+    			$(".profile-icon").tooltip('hide');
+    		},3000);
+    	 });
+
+    	// remove tool tip
+    	$(".profile-icon").click(function(){
+    		$(".profile-icon").tooltip('hide');
+    	});
+    </script>
+
+    <!-- get window size -->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".workbundle-list .dropdown").hide();
+        $(".workbundle-list .sh_ebtn").show()
+        var win_size = $(window).width();
+        if(win_size < 768){
+          $(".wb_head").addClass("wb_headfix");
+          $(".workbundle-list > div").addClass("wb_listfix");
+        }
+        if(win_size < 1198){
+          $(".act_title").empty();
+          $(".workbundle-list .sh_ebtn").hide()
+          $(".workbundle-list .dropdown").show();
+        }
+      });
+    </script>
+
+    <!-- submenu toggle -->
+    <script type="text/javascript">
+    	$(".submenu-toggle").click(function(e){
+    		e.preventDefault();
+    		$(".nav-icon").find("i").removeClass("fa-bars");
+    			$(".nav-icon").find("i").addClass("fa-times");
+    			$(".side-menu").addClass('expand-menu');
+    		/*if($(".side-menu").hasClass('expand-menu')){
+    			$(".nav-icon").find("i").removeClass("fa-bars");
+    			$(".nav-icon").find("i").addClass("fa-times");
+          		
+    		}
+    		else{
+    			
+    		}*/
+
+    		/*$(".submenu").is(':visible',hidetoggle());
+
+    		function hidetoggle(){
+    			$(".submenu").slideUp(200);
+    		}*/
+    		
+    		//$(".submenu-toggle .submenu-icon").toggleClass("rotate-arrowicon");
+    		//$('.submenu',this).slideToggle();
+    		//$(this).parent().children('.submenu').slideToggle(200);
+
+    		$(this).children(".submenu-icon").toggleClass("rotate-arrowicon");
+
+    		if($(this).parent().children('.submenu').css('display') != 'block'){
+    			$(".submenu").slideUp();
+    			$(this).parent().children('.submenu').slideDown();
+
+    		}
+    		else{
+    			$(this).parent().children('.submenu').slideUp();
+    			
+    		}
+
+    	});
+    	//$("#sidemenus").metisMenu();
+    </script>
+   
+    <script type="text/javascript">
+    $(document).ready(function(){
+           
+        $('#accordion .panel-collapse').on('show.bs.collapse', function () {
+            $(this).siblings('.panel-heading').addClass('active');
+          });
+        $('#accordion .panel-collapse').on('hide.bs.collapse', function () {
+            $(this).siblings('.panel-heading').removeClass('active');
+          });
+    });
+    </script>
+    <!-- slim scroll for attachment panels -->
+    <script type="text/javascript">
+      
+      $('.comment-box .modal-content').slimScroll({
+        position: 'right',
+        height:'100%',
+        railVisible: true,
+        alwaysVisible: true
+    });
+    </script>
+    <script type="text/javascript">
+     
+      var s_wsize = $(window).width();
+
+      if(s_wsize < 768) {
+         $('.workbundle-list').slimScroll({
+            width:'767px',
+            position: 'right',
+            height: '430px',
+            railVisible: true,
+            alwaysVisible: true
+        });
+      } 
+      else {
+      $('.workbundle-list').slimScroll({
+            position: 'right',
+            height: '430px',
+            railVisible: true,
+            alwaysVisible: true
+        });
+     }
+    </script>
+  </body>
+</html>

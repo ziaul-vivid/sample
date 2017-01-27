@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ecco</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full.css" rel="stylesheet">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body,html{ height: 100%; }
+    </style>
+</head>
+<body>
+    <!-- Full Page Image Background Carousel Header -->
+        <section class="banner">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Wrapper for Slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="fill" style="background-image:url('images/banner1.jpg');"></div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('images/banner3.jpg');"></div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('images/banner4.jpg');"></div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('images/banner5.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+            <section class="home-form">
+                <div class="container">
+                    <div class="row mar0">
+                        <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 form-area">
+                         <div class="homeform-content">
+                         <!-- logo goes here-->
+                            <div class="text-center">
+                                 <img src="images/logo.png" alt="ecco logo" width="170" class=" logo mar0 text-center">
+                            </div>
+                         <!-- form area -->
+                            <form class="form-horizontal login-form">
+                              <h2><span>STEP 1 :</span> Fill in your information</h2>  
+                              <div class="form-group">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text"  class="form-control" placeholder="User Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text"  class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <input type="text"  class="form-control" placeholder="E mail">
+                                    </div>
+                                </div>
+                              </div>
+                              <h2><span>STEP 2 :</span> Select your agency</h2>  
+                              <div class="form-group">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <select  class="form-control"><option>-Select Region-</option></select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <select  class="form-control"><option>-Select Agency-</option></select>
+                                    </div>
+                                </div>
+                              </div>
+                              <h2><span>STEP 3 :</span> Notes of Administrator</h2>  
+                              <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <textarea  class="form-control" placeholder="Write your notes here"></textarea>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-6 col-xs-8">
+                                    <p>Alerady register member?<a href="" class="small forget-pwd">Login</a></p>
+                                </div>
+                                <div class="col-sm-6 col-xs-4">
+                                    <button class="login_btn pull-right">Create a New Account</button>
+                                </div>
+                              </div>
+                            </form>
+                        <!-- form ends -->
+                            
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+            <!-- header ends -->
+            
+        
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000, //changes the speed
+        pause: "false"
+    })
+    </script>
+    <script type="text/javascript">
+        $( "input" ).focus(function() {
+            $( this ).prev(".input-group-addon").addClass("input-focus");
+        }).blur(function(){
+            $( this ).prev(".input-group-addon").removeClass("input-focus");
+        });
+    </script>
+</body>
+</html>

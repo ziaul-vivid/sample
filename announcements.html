@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>ecco</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/full.css" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- roboto fonts -->
+    <link rel="stylesheet" href="css/metisMenu.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+  </head>
+
+  <body class="font_roboto">
+  <!-- Fixed navbar -->
+  <header class="blue_bg navbar-fixed-top">
+      <div class="container">
+  		 <div class="row">
+  		 	<div class="col-sm-6 col-xs-8">
+  		 		<a href="#" class="header_logo"><img src="images/logo_white.png" alt="ecco logo"></a>
+  		 	</div>
+  		 	<div class="col-sm-6 col-xs-4">
+  		 		<div class="pull-right dropdown profile-icon" data-toggle = "tooltip" data-placement = "bottom" title="Welcome Admin">
+  		 			<figure class="dropdown-toggle" data-toggle="dropdown">
+  		 				<img src="images/profile.jpg" class="img-circle" alt="profile icon" >
+  		 			</figure>
+  		 			<ul class="dropdown-menu">
+					    <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+					    <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Help</a></li>
+					    <li><a href="#">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+					</ul>
+  		 		</div>
+  		 		<div class="header-date-time pull-right hidden-xs">
+  		 			<p><span>3.33 </span> <span class="ft_20">AM EST</span> <br> wednesday , 17th auguest 2016</p>
+  		 		</div> 
+  		 		<div class="clearfix"></div>
+  		 	</div>
+  		 </div>      
+      </div>
+  </header>
+    <!-- Begin page content -->
+  <section class="main-content">
+     		<section>
+     			<span class="nav-icon"><i class="fa fa-bars fa-1x"></i></span>
+     			<aside class="side-menu">
+     				<nav class="menu_list">
+     					<ul id="sidemenus">
+                <li><span><a href=""><i class="fa fa-home fa-2x"></i>Home</a></span></li>
+                <li><span><a href=""><i class=""><img src="images/user.svg" width="23" alt="tta tracker"></i>TTA Tracker</a></span></li>
+                <li><span><a href=""><i class="reporticon"><img src="images/reports.svg" width="19" alt="reports"></i>Reports</a></span></li>
+                <li><span><a href=""><i class="fa fa-briefcase fa-2x"></i>Briefcase</a></span>
+                  <span class="notification">23</span>
+                </li>
+                <li><span><a href=""><i class="fa fa-gear fa-2x"></i>strategies</a></span>
+                </li>
+                <li><span><a href=""><i class="fa fa-comment fa-2x"></i>Messages</a></span><span class="empty-notification">99</span></li>
+                <li><span class="submenu-toggle"><a href=""><i class="fa fa-link fa-2x"></i>Quick Links <i class="custom-icon submenu-icon"></i></a></span>
+                  <ul class="submenu">
+                    <li><a href=""><i class="fa fa-users" aria-hidden="true"></i> Resources</a></li>
+                    <li><a href=""><i class="fa fa-book" aria-hidden="true"></i> Training Center</a></li>
+                    <li><a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> Get Help</a></li>
+                    <li><a href=""><i class="fa fa-calendar" aria-hidden="true"></i> Calender</a></li>
+                  </ul>
+                             </li>
+                <li><span class="submenu-toggle"><a href=""><i class=""><img src="images/admin_icon.svg" width="19" alt="tta tracker"></i>Admin <i class="custom-icon submenu-icon"></i></a></span>
+                  <ul class="submenu">
+                    <li><a href=""><i class="fa fa-user" aria-hidden="true"></i> User</a></li>
+                    <li><a href=""><i class="fa fa-user-secret" aria-hidden="true"></i> Agency</a></li>
+                    <li><a href=""><i class="fa fa-level-up" aria-hidden="true"></i> Levels</a></li>
+                    <!-- <li><a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Create Form</a></li> -->
+                    <li><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> User Approval</a></li>
+                    <li><a href=""><i class="fa fa-eye" aria-hidden="true"></i> Show Assignments</a></li>
+                    <li><span><a href=""><i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>Announcements</a></span><span class="notification">23</span></li>
+                  </ul>
+                </li>
+                <li><span><a href=""><i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>Announcements</a></span><span class="notification">23</span></li>
+              </ul>
+     				</nav>
+     			</aside>
+     		</section>
+     		<section >
+	     		<div class="container">
+	     			<div class="row">
+                <div class="col-sm-12">
+                  <h1 class="page-title">Announcements <small class="text_black fb_300">(Sort and Select Recipients)</small></h1>
+                </div>
+            </div>
+             <!-- filter form -->
+            <div class="row mar_t10 mar0 filter form">
+              <div class="col-md-4 col-sm-4 col-xs-12 pad_l0">
+                  <div class="form-group">
+                      <label class="ft_17">By Region</label>
+                      <select class="form-control" name=""><option>-- Select Region --</option></select>
+                  </div>
+              </div>
+              <div class="col-md-5 col-sm-4 col-xs-12 pad_r20">
+                  <div class="form-group">
+                      <label class="ft_17">By Agency</label>
+                      <select class="form-control" name=""><option>-- Select Agency --</option></select>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-12 pad0">
+                  <div class="form-group">
+                      <label class="ft_17">&nbsp;</label>
+                      <button class="wid100 mar_t0" type = "button">Search</button>
+                  </div>
+              </div>
+            </div>  
+
+            <div class="row announcement_chatbox">
+                <div class="col-md-9 col-sm-8 col-xs-12 pad0">
+                   <div class="chat_window">
+                      <div class="chat_box">
+                        <div class="chat_area">
+                          <ul>
+                              <!-- left comment area -->
+                               <li class="row left-comment text-left">
+                                  <div class="col-md-1 col-sm-2 col-xs-2">
+                                      <img src="images/profile.jpg" alt="profile icon" class="profile-image">
+                                  </div>
+                                  <div class="col-md-11 col-sm-10 col-xs-9 pad_l20">
+                                      <div class="comment-info">
+                                         <p><span class="chat-username">Admin</span><small class="chat-datelocation"><i>09:48 PM</i></small></p>
+                                         <span class="clearfix"></span>
+                                         <p class="chat-content mar_tb10">I submitted this to the research department for research summary.
+                                          We should have this done by April 29th, I will give you updates as we proceed.
+                                         </p>
+                                      </div>
+                                  </div>
+                               </li>
+                               
+                               <!-- start date separator -->
+                               <p class="date_divider"><span class="text_blue fb_500">Sep 20, 2016</span></p>
+                               <!-- end date separator -->
+                               <!-- left comment area -->
+                               <li class="row left-comment text-left">
+                                  <div class="col-md-1 col-sm-2 col-xs-2">
+                                      <img src="images/profile.jpg" alt="profile icon" class="profile-image">
+                                  </div>
+                                  <div class="col-md-11 col-sm-10 col-xs-9 pad_l20">
+                                      <div class="comment-info">
+                                         <p><span class="chat-username">Admin</span><small class="chat-datelocation"><i class="fa fa-pencil-square-o text_light_red" aria-hidden="true"></i><i class="fa fa-trash text_light_red" aria-hidden="true"></i> <i>09:58 PM</i></small></p>
+                                         <span class="clearfix"></span>
+                                         <p class="chat-content mar_tb10">I submitted this to the research department for research summary.
+                                          We should have this done by April 29th, I will give you updates as we proceed.
+                                         </p>
+                                         <span class="clearfix"></span>
+                                         <p class="pull-right file-attachment mar0"><i class="fa fa-paperclip mar_r5"></i>photocopy.jpg</p>
+                                         <span class="clearfix"></span>
+                                      </div>
+                                  </div>
+                               </li>
+                               
+                              </ul>
+                          </div>
+                          <div class="comment-box">
+                              <div class="row">
+                                  <div class="col-md-8 col-sm-8 col-xs-7 pad_r0">
+                                      <div class="form-group mar0">
+                                          <input type="text" class="form-control" name="">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-1 col-sm-1 col-xs-2 mar_t10">
+                                      <span><i class="fa  fa-smile-o text_blue"></i></span>
+                                      <div class="custom-fileupload mar_t5">
+                                        <label>
+                                          <i class="fa fa-paperclip "></i> 
+                                          <input type="file" class="form-control hidden" >
+                                        </label>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 col-xs-3 form pad_l0">
+                                     <button class="button mar0" data-announcementstaus="Message Has Been Sent">Send</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 pad0">
+                  <div class="chat_userlist">
+                      <h3 class="text_blue mar0 pad0 fb_300">Announcement Status</h3>
+                      <p id="announcement_satus">Please check Recipients and Proff Message</p>
+                      <div class="text-center announcement_button">
+                        <button class="button" type = "button" data-announcementstaus="Please check Recipients and Proff Message">Preview Announcement</button>
+                        <button class="button" type = "button" data-announcementstaus="Page will go revert back to the starting page , all sorts go to neutral position">Reset</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+	     		</div>
+     		</section>
+  </section>
+
+  <footer class="footer">
+	    <div class="container">
+	       <div class="row">
+	       		<div class="col-xs-12 col-sm-8 col-md-9">
+	       			<p><a href="">Terms of use</a><a href="">  |  Privacy Policy </a> <span>Copyright &copy; 2016 Prospectus Group, LLC. All rights reserved.</span></p>
+	       		</div>
+	       		<div class="col-xs-12 col-sm-4 col-md-3 footer-logo">
+	       			<img src="images/pgroup_new.jpg" width="30">
+	       		</div>
+	       </div>
+	    </div>
+	  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!-- menu expand script -->
+
+    <script type="text/javascript">
+    	$(".nav-icon").click(function(){
+    		$(".side-menu").toggleClass("expand-menu");
+    		$(".nav-icon").find("i").toggleClass("fa-bars fa-times ");
+    		$(".submenu").is(':visible',hidetoggle());
+    		function hidetoggle(){
+    			$(".submenu").slideUp(200);
+    		}
+    	});
+    </script>
+    <!-- tool top -->
+    <script type="text/javascript">
+    	$(function () { 
+    		$("[data-toggle = 'tooltip']").tooltip();
+    		$(".profile-icon").tooltip('show');
+    		setTimeout(function(){
+    			$(".profile-icon").tooltip('hide');
+    		},3000);
+    	 });
+
+    	// remove tool tip
+    	$(".profile-icon").click(function(){
+    		$(".profile-icon").tooltip('hide');
+    	});
+    </script>
+
+    <!-- submenu toggle -->
+    <script type="text/javascript">
+    	$(".submenu-toggle").click(function(e){
+    		e.preventDefault();
+    		$(".nav-icon").find("i").removeClass("fa-bars");
+    			$(".nav-icon").find("i").addClass("fa-times");
+    			$(".side-menu").addClass('expand-menu');
+    		/*if($(".side-menu").hasClass('expand-menu')){
+    			$(".nav-icon").find("i").removeClass("fa-bars");
+    			$(".nav-icon").find("i").addClass("fa-times");
+          		
+    		}
+    		else{
+    			
+    		}*/
+
+    		/*$(".submenu").is(':visible',hidetoggle());
+
+    		function hidetoggle(){
+    			$(".submenu").slideUp(200);
+    		}*/
+    		
+    		//$(".submenu-toggle .submenu-icon").toggleClass("rotate-arrowicon");
+    		//$('.submenu',this).slideToggle();
+    		//$(this).parent().children('.submenu').slideToggle(200);
+
+    		$(this).children(".submenu-icon").toggleClass("rotate-arrowicon");
+
+    		if($(this).parent().children('.submenu').css('display') != 'block'){
+    			$(".submenu").slideUp();
+    			$(this).parent().children('.submenu').slideDown();
+
+    		}
+    		else{
+    			$(this).parent().children('.submenu').slideUp();
+    			
+    		}
+
+    	});
+    	//$("#sidemenus").metisMenu();
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.count').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+           
+        $('#accordion .panel-collapse').on('show.bs.collapse', function () {
+            $(this).siblings('.panel-heading').addClass('active');
+          });
+        $('#accordion .panel-collapse').on('hide.bs.collapse', function () {
+            $(this).siblings('.panel-heading').removeClass('active');
+          });
+    });
+    </script>
+    <!-- slim scroll for attachment panels -->
+    <script type="text/javascript">
+      $('.attachment_list').slimScroll({
+        position: 'right',
+        height: '145px',
+        railVisible: true,
+        alwaysVisible: false
+    });
+       $('.chat_area').slimScroll({
+        position: 'right',
+        height:'300px',
+        start:'bottom',
+        railVisible: true,
+        alwaysVisible: false
+
+    });
+    
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var maxHeight = 0;
+       /* $(".assign_box_itmes .item_info ul li ul").each(function(){
+           if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+        });
+        $(".assign_box_itmes .item_info ul li ul").height(maxHeight);*/
+        
+        for(i=1;i<=2;i++){
+        $("#assign_box_itmes" + i).each(function(){
+           $(this).find(".item_info ul li ul").each(function(){
+               if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+            });
+           $(this).find(".item_info ul li ul").height(maxHeight);
+            
+        });
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      
+      $("button").click(function(){
+
+         var announcement_satus = $(this).attr("data-announcementstaus");
+
+         $("#announcement_satus").html(announcement_satus);
+
+      })
+
+    </script>
+
+  </body>
+</html>

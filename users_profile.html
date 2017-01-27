@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>ecco</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/full.css" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- roboto fonts -->
+    <link rel="stylesheet" href="css/easy-responsive-tabs.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+  </head>
+
+  <body class="font_roboto">
+  <!-- Fixed navbar -->
+  <header class="blue_bg navbar-fixed-top">
+      <div class="container">
+  		 <div class="row">
+  		 	<div class="col-sm-6 col-xs-8">
+  		 		<a href="#" class="header_logo"><img src="images/logo_white.png" alt="ecco logo"></a>
+  		 	</div>
+  		 	<div class="col-sm-6 col-xs-4">
+  		 		<div class="pull-right dropdown profile-icon" data-toggle = "tooltip" data-placement = "bottom" title="Welcome Admin">
+  		 			<figure class="dropdown-toggle" data-toggle="dropdown">
+  		 				<img src="images/profile.jpg" class="img-circle" alt="profile icon" >
+  		 			</figure>
+  		 			<ul class="dropdown-menu">
+					    <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+					    <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Help</a></li>
+					    <li><a href="#">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+					</ul>
+  		 		</div>
+  		 		<div class="header-date-time pull-right hidden-xs">
+  		 			<p><span>3.33 </span> <span class="ft_20">AM EST</span> <br> wednesday , 17th auguest 2016</p>
+  		 		</div> 
+  		 		<div class="clearfix"></div>
+  		 	</div>
+  		 </div>      
+      </div>
+  </header>
+    <!-- Begin page content -->
+  <section class="main-content">
+     		<section>
+     			<span class="nav-icon"><i class="fa fa-bars fa-1x"></i></span>
+     			<aside class="side-menu">
+     				<nav class="menu_list">
+     					<ul id="sidemenus">
+                <li><span><a href=""><i class="fa fa-home fa-2x"></i>Home</a></span></li>
+                <li><span><a href=""><i class=""><img src="images/user.svg" width="23" alt="tta tracker"></i>TTA Tracker</a></span></li>
+                <li><span><a href=""><i class="reporticon"><img src="images/reports.svg" width="19" alt="reports"></i>Reports</a></span></li>
+                <li><span><a href=""><i class="fa fa-briefcase fa-2x"></i>Briefcase</a></span>
+                  <span class="notification">23</span>
+                </li>
+                <li><span><a href=""><i class="fa fa-gear fa-2x"></i>strategies</a></span>
+                </li>
+                <li><span><a href=""><i class="fa fa-comment fa-2x"></i>Messages</a></span><span class="empty-notification">99</span></li>
+                <li><span class="submenu-toggle"><a href=""><i class="fa fa-link fa-2x"></i>Quick Links <i class="custom-icon submenu-icon"></i></a></span>
+                  <ul class="submenu">
+                    <li><a href=""><i class="fa fa-users" aria-hidden="true"></i> Resources</a></li>
+                    <li><a href=""><i class="fa fa-book" aria-hidden="true"></i> Training Center</a></li>
+                    <li><a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> Get Help</a></li>
+                    <li><a href=""><i class="fa fa-calendar" aria-hidden="true"></i> Calender</a></li>
+                  </ul>
+                </li>
+                <li><span class="submenu-toggle"><a href=""><i class=""><img src="images/admin_icon.svg" width="19" alt="tta tracker"></i>Admin <i class="custom-icon submenu-icon"></i></a></span>
+                  <ul class="submenu">
+                    <li><a href=""><i class="fa fa-user" aria-hidden="true"></i> User</a></li>
+                    <li><a href=""><i class="fa fa-user-secret" aria-hidden="true"></i> Agency</a></li>
+                    <li><a href=""><i class="fa fa-level-up" aria-hidden="true"></i> Levels</a></li>
+                    <!-- <li><a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Create Form</a></li> -->
+                    <li><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> User Approval</a></li>
+                    <li><a href=""><i class="fa fa-eye" aria-hidden="true"></i> Show Assignments</a></li>
+                  </ul>
+                </li>
+              </ul>
+     				</nav>
+     			</aside>
+     		</section>
+     		<section >
+	     		<div class="container">
+	     			<div class="row">
+                <div class="col-sm-12">
+                  <h1 class="page-title">
+                    <div class="row">
+                      <span class="col-sm-8">users profile</span>
+                      <span class="col-sm-4 text_blue text-right proflilname_icon"><img src="images/profile.jpg"> Marcus</span>
+                    </div>
+                  </h1>
+                </div>
+            </div>
+            <div>
+            <div class="site_tabs" id="horizontalTab">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs resp-tabs-list" role="tablist">
+                <li role="presentation" class="active"><a href="#general_settings" aria-controls="home" role="tab" data-toggle="tab">General</a></li>
+                <li role="presentation"><a href="#ageny_name" aria-controls="ageny_name" role="tab" data-toggle="tab">Agency Name</a></li>
+                <li role="presentation"><a href="#priority" aria-controls="priority" role="tab" data-toggle="tab">Priority</a></li>
+                <li role="presentation"><a href="#strategies" aria-controls="stratergies" role="tab" data-toggle="tab">Strategies</a></li>
+                <li role="presentation"><a href="#address" aria-controls="address" role="tab" data-toggle="tab">Address</a></li>
+                <li role="presentation"><a href="#region" aria-controls="region" role="tab" data-toggle="tab">Region</a></li>
+                <li role="presentation"><a href="#accesslogs" aria-controls="accesslogs" role="tab" data-toggle="tab">Access Logs</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content resp-tabs-container form">
+                <!-- general settings -->
+                <div role="tabpanel"  id="general_settings">
+                    <div class="row">
+                      <h2 class="tab_title">General Settings</h2>
+                       <div class="col-md-4">
+                          <div class="form-group">
+                              <label>Name</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label>User Name</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label>Password</label>
+                              <input type="password" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label>Password Again</label>
+                              <input type="password" class="form-control">
+                          </div>
+                       </div>
+                       <div class="col-md-4">
+                          <div class="form-group">
+                              <label>Phone Number</label>
+                              <input type="text" class="form-control" >
+                          </div>
+                          <div class="form-group">
+                              <label>Email</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label>Region</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group ">
+                            <p><label>&nbsp;</label></p>
+                            <label class="mar0 checkbox_normal">
+                              <input type="checkbox" id="checkbox" value="option1">
+                              <span class="custom-icon checkbox-icon"></span>Restrict user
+                            </label>
+                            <label class="mar0 pull-right checkbox_normal">
+                              <input type="checkbox" id="checkbox" value="option1">
+                              <span class="custom-icon checkbox-icon"></span>Delete user?(can not be undone)
+                            </label>
+                            <span class="clearfix"></span>
+                          </div>
+                       </div>
+                       <div class="col-md-4">
+                          <div class="form-group">
+                              <label>Agency Name</label>  
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <p><label>Approved</label></p>
+                              <label class="mar_b10 checkbox_normal">
+                                <input type="radio" name="approve" value="option1">
+                                <span class="custom-icon radio-icon"></span>yes
+                              </label>
+                              <label class="checkbox_normal mar_l20 mar_b10">
+                                <input type="radio" name="approve" value="option1">
+                                <span class="custom-icon radio-icon"></span>No
+                              </label>
+                          </div>
+                          <div class="form-group">
+                              <label>User Levels</label>
+                              <input type="text" class="form-control">
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                <!-- agency name -->
+                <div role="tabpanel"  id="ageny_name">
+                    <div class="row">
+                      <h2 class="tab_title">Agency Name</h2>
+                      <div class="col-md-12">
+                         <div class="form-group">
+                            <label>Agency Name</label>
+                            <input type="text" class="form-control" name="">
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- priority -->
+                <div role="tabpanel"  id="priority">
+                  <div class="row">
+                    <h2 class="tab_title">Priority</h2>
+                    <div class="col-sm-6 col-xs-12">
+                       <div class="form-group">
+                          <label>Priority Area</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                       <div class="form-group">
+                          <label>Priority Notes</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- stratergies -->
+                <div role="tabpanel"  id="strategies">
+                  <div class="row">
+                    <h2 class="tab_title">Strategies</h2>
+                    <div class="col-sm-6 col-xs-12">
+                       <div class="form-group">
+                          <label>Primary Strategies</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                       <div class="form-group">
+                          <label>Secondary Strategies</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- address -->
+                <div role="tabpanel"  id="address">
+                  <div class="row">
+                    <h2 class="tab_title">Address</h2>
+                    <div class="col-sm-6 col-xs-12">
+                       <div class="form-group">
+                          <label>Street</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                          <label>Zip</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                          <label>Alt Num</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                       <div class="form-group">
+                          <label>Suite</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                          <label>State</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                          <label>Phone</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                          <label>Website</label>
+                          <input type="text" class="form-control" name="">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- region -->
+                <div role="tabpanel"  id="region">
+                  <div class="row">
+                    <h2 class="tab_title">Region</h2>
+                    <div class="col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+                       <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>Region 1
+                          </label>
+                      </div>
+                      <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>Region 2
+                          </label>
+                      </div>
+                      <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>Region 3
+                          </label>
+                      </div>
+                      <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>Region 4
+                          </label>
+                      </div>
+                       <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>Region 5
+                          </label>
+                      </div>
+                      <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>Region 6
+                          </label>
+                      </div>
+                      <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>All
+                          </label>
+                      </div>
+                      <div class="form-group">
+                          <label class="mar_b10 checkbox_normal">
+                            <input type="checkbox" name="approve" value="option1">
+                            <span class="custom-icon checkbox-icon"></span>NA
+                          </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- accesslogs -->
+                <div role="tabpanel"  id="accesslogs">
+                  <div class="row">
+                    <h2 class="tab_title">Access Logs</h2>
+                    <!-- <div class="col-sm-6">
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div> -->
+                    <div class="col-sm-6 col-sm-offset-3">
+                       <div class="site-table table-responsive">
+                         <table class="table">
+                           <thead>
+                             <tr>
+                               <th>LAST LOGIN</th>
+                               <th>LOCATION</th>
+                             </tr>
+                           </thead>
+                           <tbody class="text-center">
+                              <tr>
+                                  <td>Apr 04, 2016 at 07:04 AM</td>
+                                  <td>122.175.72.250</td>
+                              </tr>
+                              <tr>
+                                  <td>Feb 27, 2016 at 07:45 AM</td>
+                                  <td>122.175.15.158</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 text-center form">
+                <button>Update</button>
+             </div>
+            </div>
+            </div>
+	     		</div>
+     		</section>
+  </section>
+
+  <footer class="footer">
+	    <div class="container">
+	       <div class="row">
+	       		<div class="col-xs-12 col-sm-8 col-md-9">
+	       			<p><a href="">Terms of use</a><a href="">  |  Privacy Policy </a> <span>Copyright &copy; 2016 Prospectus Group, LLC. All rights reserved.</span></p>
+	       		</div>
+	       		<div class="col-xs-12 col-sm-4 col-md-3 footer-logo">
+	       			<img src="images/pgroup_new.jpg" width="30">
+	       		</div>
+	       </div>
+	    </div>
+	  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/easy-responsive-tabs.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!-- menu expand script -->
+
+    <script type="text/javascript">
+    	$(".nav-icon").click(function(){
+    		$(".side-menu").toggleClass("expand-menu");
+    		$(".nav-icon").find("i").toggleClass("fa-bars fa-times ");
+    		$(".submenu").is(':visible',hidetoggle());
+    		function hidetoggle(){
+    			$(".submenu").slideUp(200);
+    		}
+    	});
+    </script>
+    <!-- tool top -->
+    <script type="text/javascript">
+    	$(function () { 
+    		$("[data-toggle = 'tooltip']").tooltip();
+    		$(".profile-icon").tooltip('show');
+    		setTimeout(function(){
+    			$(".profile-icon").tooltip('hide');
+    		},3000);
+    	 });
+
+    	// remove tool tip
+    	$(".profile-icon").click(function(){
+    		$(".profile-icon").tooltip('hide');
+    	});
+    </script>
+
+    <!-- submenu toggle -->
+    <script type="text/javascript">
+    	$(".submenu-toggle").click(function(e){
+    		e.preventDefault();
+    		$(".nav-icon").find("i").removeClass("fa-bars");
+    			$(".nav-icon").find("i").addClass("fa-times");
+    			$(".side-menu").addClass('expand-menu');
+    		/*if($(".side-menu").hasClass('expand-menu')){
+    			$(".nav-icon").find("i").removeClass("fa-bars");
+    			$(".nav-icon").find("i").addClass("fa-times");
+          		
+    		}
+    		else{
+    			
+    		}*/
+
+    		/*$(".submenu").is(':visible',hidetoggle());
+
+    		function hidetoggle(){
+    			$(".submenu").slideUp(200);
+    		}*/
+    		
+    		//$(".submenu-toggle .submenu-icon").toggleClass("rotate-arrowicon");
+    		//$('.submenu',this).slideToggle();
+    		//$(this).parent().children('.submenu').slideToggle(200);
+
+    		$(this).children(".submenu-icon").toggleClass("rotate-arrowicon");
+
+    		if($(this).parent().children('.submenu').css('display') != 'block'){
+    			$(".submenu").slideUp();
+    			$(this).parent().children('.submenu').slideDown();
+
+    		}
+    		else{
+    			$(this).parent().children('.submenu').slideUp();
+    			
+    		}
+
+    	});
+    	//$("#sidemenus").metisMenu();
+    </script>
+   
+    <script type="text/javascript">
+    $(document).ready(function(){
+           
+        $('#accordion .panel-collapse').on('show.bs.collapse', function () {
+            $(this).siblings('.panel-heading').addClass('active');
+          });
+        $('#accordion .panel-collapse').on('hide.bs.collapse', function () {
+            $(this).siblings('.panel-heading').removeClass('active');
+          });
+    });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+          type: 'default', //Types: default, vertical, accordion           
+          width: 'auto', //auto or any width like 600px
+          fit: true,   // 100% fit in a container
+          closed: 'accordion', // Start closed if in accordion view
+          activate: function(event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#tabInfo');
+            var $name = $('span', $info);
+            $name.text($tab.text());
+            $info.show();
+          }
+        });
+      });
+      </script>
+    
+  </body>
+</html>
